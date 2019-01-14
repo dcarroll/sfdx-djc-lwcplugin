@@ -2,7 +2,7 @@
     "name": "lwc-create",
     "displayName": "LWC Create",
     "description": "Rich UI for creating LWC",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "djcarroll",
     "repository": "https://github.com/dcarroll/sfdx-djc-lwcplugin",
     "engines": {
@@ -19,7 +19,7 @@
         "commands": [
             {
                 "command": "createLWCComponent.start",
-                "title": "Create a Lightnint Web Component",
+                "title": "Create a Lightning Web Component",
                 "category": "SFDX Coding"
             }
         ]

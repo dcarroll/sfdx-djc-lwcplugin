@@ -22,12 +22,21 @@ export function activate(context: vscode.ExtensionContext) {
 
     vscode.window.showInformationMessage('Started');
     context.subscriptions.push(vscode.commands.registerCommand('createLWCComponent.start', () => {
-        const panel = vscode.window.createWebviewPanel('createLWCComponent', "New LWC Component", vscode.ViewColumn.One, {
-            enableScripts: true
-        });
+        const panel = vscode.window.createWebviewPanel(
+            'createLWCComponent', 
+            "New LWC Component", 
+            vscode.ViewColumn.One, 
+            {
+                enableScripts: true,
+                localResourceRoots: [vscode.Uri.file(path.join(context.extensionPath, 'public'))]
+            }
+        );
 
-        const onDiskPath = vscode.Uri.file(path.join(context.extensionPath, 'src/webviews', 'options.html'));
-        const onDiskCssPath = vscode.Uri.file(path.join(context.extensionPath, 'src/webviews/styles/styles', 'slds.css'));
+        const onDiskPath = vscode.Uri.file(path.join(context.extensionPath, 'public/webviews', 'options.html'));
+        const onDiskCssPath = vscode.Uri.file(path.join(context.extensionPath, 'public/webviews/styles/styles', 'slds.css'));
+        
+        console.log(onDiskCssPath);
+        console.log(onDiskPath);
 
         const wsf = vscode.workspace.workspaceFolders;
         const wsff = wsf ? wsf : [];
