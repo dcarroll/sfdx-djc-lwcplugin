@@ -1,9 +1,10 @@
 {
-    "name": "webview",
-    "displayName": "WebView",
-    "description": "Testing webview stuff",
+    "name": "lwc-create",
+    "displayName": "LWC Create",
+    "description": "Rich UI for creating LWC",
     "version": "0.0.1",
     "publisher": "djcarroll",
+    "repository": "https://github.com/dcarroll/sfdx-djc-lwcplugin",
     "engines": {
         "vscode": "^1.29.0"
     },
