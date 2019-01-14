@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Coding</title>
+    <style rel="stylesheet" type="text/css">
+      style-here { x: 1 }
+      .slds-form-element__label {
+        font-size: 1.05em;
+      }
+    </style>
+    <base href="##base-path##/" />
+  </head>
+  <body class="vsdc">
+        <ol class="slds-setup-assistant">
+                <li class="slds-setup-assistant__item">
+                  <article class="slds-setup-assistant__step">
+                    <div class="slds-summary-detail">
+                      <div>
+                        <div class="slds-summary-detail__title">
+                          <div class="slds-setup-assistant__step-summary">
+                            <div class="slds-media">
+                              <div class="slds-media__figure">
+                                <div
+                                  class="slds-progress-ring slds-progress-ring_complete slds-progress-ring_large"
+                                >
+                                  <div
+                                    class="slds-progress-ring__progress"
+                                    role="progressbar"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                    aria-valuenow="100"
+                                  >
+                                    <svg viewBox="-1 -1 2 2">
+                                      <path
+                                        class="slds-progress-ring__path"
+                                        id="slds-progress-ring-path-146"
+                                        d="M 1 0 A 1 1 0 1 1 1 -2.4492935982947064e-16 L 0 0"
+                                      ></path>
+                                    </svg>
+                                  </div>
+                                  <div class="slds-progress-ring__content">
+                                    <span
+                                      class="slds-icon_container slds-icon-utility-check"
+                                      title="Complete"
+                                    >
+                                      <svg class="slds-icon" aria-hidden="true">
+                                        <use
+                                          xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"
+                                        ></use>
+                                      </svg>
+                                      <span class="slds-assistive-text">Complete</span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="slds-media__body slds-m-top_x-small">
+                                <div class="slds-media">
+                                  <div class="slds-setup-assistant__step-summary-content slds-media__body" >
+                                    <h3 class="slds-setup-assistant__step-summary-title slds-text-heading_small">
+                                        Create A New Lightning Web Component
+                                    </h3>
+                                    <div class="slds-form-element">
+                                        <label class="slds-form-element__label" for="text-input-id-1">
+                                          <abbr class="slds-required" title="required">* </abbr>Enter a name for your web component</label>
+                                        <div class="slds-form-element__control">
+                                            <input id="lwcname" class="slds-input" type="text" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="text-input-id-1">
+                                        <abbr class="slds-required" title="required">* </abbr>Enter a master label for the component</label>
+                                      <div class="slds-form-element__control">
+                                          <input id="masterlabel" class="slds-input" type="text" value="Default Mater Label" />
+                                      </div>
+                                    </div>
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="textarea-id-01">
+                                        Enter a description of what the component does</label>
+                                      <div class="slds-form-element__control">
+                                        <textarea style="color: black" id="description" required="" class="slds-textarea" >Super inadequate description of functionality</textarea>
+                                      </div>
+                                    </div>                                    
+                                    <div class="slds-form-element">
+                                      <label class="slds-form-element__label" for="text-input-id-1">
+                                        <abbr class="slds-required" title="required">* </abbr>Select the folder in which to create the web component</label>
+                                      <div class="slds-form-element__control">
+                                        <select style="color: black" id="paths">
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                    <article class="slds-setup-assistant__step">
+                        <div class="slds-setup-assistant__step-summary">
+                            <div class="slds-media">
+                                <div class="slds-media__body slds-m-top_x-small">
+                                    <div class="slds-media">
+                                        <div class="slds-setup-assistant__step-summary-content slds-media__body">
+                                            <h3 class="slds-setup-assistant__step-summary-title slds-text-heading_small">Select targets for you component. Targets specify which types of Lightning page the component can be added to. If you want your component to appear in the Lightning App Builder or in Community Builder, specify at least one Lightning page type.</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-media__figure slds-media__figure_reverse">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <label class="slds-checkbox_toggle slds-grid">
+                                        <input onclick="updateData(this)" name="checkbox-toggle" type="checkbox" aria-describedby="checkbox-toggle-4" value="lightning__RecordPage">
+                                        <span id="checkbox-toggle-4" class="slds-checkbox_faux_container" aria-live="assertive">
+                                            <span class="slds-checkbox_faux"></span>
+                                            <span class="slds-checkbox_on">Enabled</span>
+                                            <span class="slds-checkbox_off">Disabled</span>
+                                        </span>
+                                        <label class="slds-form-element__label" for="text-input-id-1" style="padding-left: 10px;">Enables a component to be used on a Lightning page of type Record</label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <label class="slds-checkbox_toggle slds-grid">
+                                        <input onclick="updateData(this)" name="checkbox-toggle" type="checkbox" aria-describedby="checkbox-toggle-4" value="lightning__AppPage">
+                                        <span id="checkbox-toggle-4" class="slds-checkbox_faux_container" aria-live="assertive">
+                                            <span class="slds-checkbox_faux"></span>
+                                            <span class="slds-checkbox_on">Enabled</span>
+                                            <span class="slds-checkbox_off">Disabled</span>
+                                        </span>
+                                        <label class="slds-form-element__label" for="text-input-id-1" style="padding-left: 10px;">Enables a component to be used on a Lightning page of type App Home</label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <label class="slds-checkbox_toggle slds-grid">
+                                            <input onclick="updateData(this)" name="checkbox-toggle" type="checkbox" aria-describedby="checkbox-toggle-4" value="lightning__HomePage">
+                                            <span id="checkbox-toggle-4" class="slds-checkbox_faux_container" aria-live="assertive">
+                                                <span class="slds-checkbox_faux"></span>
+                                                <span class="slds-checkbox_on">Enabled</span>
+                                                <span class="slds-checkbox_off">Disabled</span>
+                                            </span>
+                                            <label class="slds-form-element__label" for="text-input-id-1" style="padding-left: 10px;">Enables a component to be used on a Lightning page of type Home</label>
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <label class="slds-checkbox_toggle slds-grid">
+                                        <input onclick="updateData(this)" name="checkbox-toggle" type="checkbox" aria-describedby="checkbox-toggle-4" value="lightningCommunity__Page">
+                                        <span id="checkbox-toggle-4" class="slds-checkbox_faux_container" aria-live="assertive">
+                                            <span class="slds-checkbox_faux"></span>
+                                            <span class="slds-checkbox_on">Enabled</span>
+                                            <span class="slds-checkbox_off">Disabled</span>
+                                        </span>
+                                        <label class="slds-form-element__label" for="text-input-id-1" style="padding-left: 10px;">Enable component to be used on a Lightning community page in Community Builder</label>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="slds-form-element">
+                              <div class="slds-form-element__control">
+                                  <label class="slds-checkbox_toggle slds-grid">
+                                      <input onclick="updateData(this)" name="checkbox-toggle" type="checkbox" aria-describedby="checkbox-toggle-4" value="lightningCommunity__Default">
+                                      <span id="checkbox-toggle-4" class="slds-checkbox_faux_container" aria-live="assertive">
+                                          <span class="slds-checkbox_faux"></span>
+                                          <span class="slds-checkbox_on">Enabled</span>
+                                          <span class="slds-checkbox_off">Disabled</span>
+                                      </span>
+                                      <label class="slds-form-element__label" for="text-input-id-1" style="padding-left: 10px;">Used together with lightningCommunity__Page. Enables a component that includes configurable properties to be used on a Lightning community page in Community Builder</label>
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="slds-setup-assistant__step">
+                        <div class="slds-setup-assistant__step-summary">
+                            <div class="slds-media">
+                                <div class="slds-media__body slds-m-top_x-small">
+                                    <div class="slds-media">
+                                        <div class="slds-setup-assistant__step-summary-content slds-media__body">
+                                            <h3 class="slds-setup-assistant__step-summary-title slds-text-heading_small">Enable the toggle below to expose your component</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-media__figure slds-media__figure_reverse">
+                            <div class="slds-form-element">
+                                <div class="slds-form-element__control">
+                                    <label class="slds-checkbox_toggle slds-grid">
+                                        <input id="isexposed" name="checkbox-toggle" type="checkbox" aria-describedby="checkbox-toggle-4" value="isExposed" checked="true">
+                                        <span id="isexposed" class="slds-checkbox_faux_container" aria-live="assertive">
+                                            <span class="slds-checkbox_faux"></span>
+                                            <span class="slds-checkbox_on">Enabled</span>
+                                            <span class="slds-checkbox_off">Disabled</span>
+                                        </span>
+                                        <label class="slds-form-element__label" for="text-input-id-1" style="padding-left: 10px;">Enables a component to be used on a Lightning page of type Record</label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </li>
+            </ol>
+
+    <span id="options">
+      <button
+        class="slds-button slds-button_neutral"
+        type="button"
+        onclick="debugger; submitAndClose()"
+      >
+        Create Component
+      </button>
+    </span>
+
+    <div id="debug">
+    </div>
+
+    <script>
+      const vscode = acquireVsCodeApi();
+      const x = 0;
+      /*************************************/
+      const data = { 
+        name: '', 
+        directory: '', 
+        targets: {}, 
+        isExposed: true,
+        apiVersion: '45.0',
+        masterLabel: 'Default Mater Label',
+        description: 'Super inadequate description of functionality'
+      };
+      /* const options = document
+        .getElementsByName('checkbox-toggle')
+      for (var i = 0; i < options.length; i++) {
+        data[options[i].value] = options[i].checked;
+      } */
+
+      function updateData(element) {
+        data.targets[element.value] = element.checked;
+      }
+
+      function submitAndClose() {
+        data.isExposed = document.getElementById('isexposed').checked;
+        data.name = document.getElementById('lwcname').value;
+        data.directory = document.getElementById('paths').value;
+        data.masterLabel = document.getElementById('masterlabel').value;
+        data.description = document.getElementById('description').value;
+        vscode.postMessage({
+          command: "options",
+          text: JSON.stringify(data, null, 4)
+        });
+      }
+    /*************************************/
+    window.addEventListener('message', event => {
+        const message = event.data; // The JSON data our extension sent
+        // document.getElementById('debug').innerHTML = JSON.stringify(message.dirs, null, 4);
+        var dirs = message.dirs;
+        for (var i = 0;i < dirs.length; i++) {
+            // Add in the options to select from
+            if (dirs[i].indexOf('.sfdx') === -1) {
+                document.getElementById('paths').innerHTML += '<option value="' + dirs[i] + '">' + dirs[i] + '</option>';
+            }
+        }
+    });
+    vscode.postMessage({
+        command: "ready"
+    });
+    </script>
+  </body>
+</html>
