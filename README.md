@@ -1,5 +1,6 @@
 # sfdx-djc-extension README
 
+[Download the VSIX here](https://github.com/dcarroll/sfdx-djc-lwcplugin/releases/download/0.0.1/lwc-create-0.0.1.vsix)
 ## Features
 
 This extension provides an alternate way to create a Lightning Web Component (LWC) using VS Code and a web view for a richer developer experience.
